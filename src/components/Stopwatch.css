@@ -1,0 +1,119 @@
+.stopwatch-wrapper {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #151619;
+  color: #a6a8a8;
+}
+
+/* *******************************Clock**************************** */
+
+.clock-display {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clock {
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.action-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+}
+
+.btn {
+  width: 120px;
+  background-color: transparent;
+  background-color: #282a2e;
+  border: 1px solid #202225;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.start-stop {
+  width: 150px;
+}
+
+.divider {
+  height: 80%;
+  border: 1px solid #202225;
+}
+
+/* ********************************PEL*********************************** */
+
+.pel-display {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.pel-time-wrapper {
+  border: 1px solid #202225;
+  min-height: 250px;
+  width: 90%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pel-time-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.time > span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 481px) {
+  .stopwatch-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .clock-display {
+    width: 100%;
+    height: 40%;
+  }
+  .divider {
+    width: 80%;
+    height: 0px;
+  }
+  .pel-display {
+    width: 100%;
+  }
+}
