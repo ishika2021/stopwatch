@@ -5,7 +5,9 @@
   align-items: center;
   flex-direction: row;
   background-color: #151619;
+  border: 1px solid #282A2E;
   color: #a6a8a8;
+  border-radius: 5px;
 }
 
 /* *******************************Clock**************************** */
@@ -68,6 +70,7 @@
 
 h1 {
   margin: 0;
+  font-size: 22px;
 }
 
 .pel-time-wrapper {
@@ -97,6 +100,12 @@ h1 {
 .time > span {
   font-size: 20px;
   font-weight: 400;
+}
+
+.empty-data-label{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 481px) {

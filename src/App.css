@@ -1,15 +1,19 @@
-
-body{
-    margin: 0;
-    background-color: #282A2E;
+body {
+  margin: 0;
+  background-color: #151619;
 }
-.main-wrapper{
+.main-wrapper {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color:#A6A8A8;
+  color: #a6a8a8;
   gap: 10px;
+}
+
+.main-wrapper > span {
+  font-size: 22px;
+  font-weight: 600;
 }

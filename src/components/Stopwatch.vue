@@ -24,7 +24,7 @@
           <div>{{ time }}</div>
         </div>
         <div v-else>
-          <h3>No Entries!!</h3>
+          <span class="empty-data-label">No Entries!!</span>
         </div>
       </div>
     </div>
@@ -92,16 +92,18 @@ const pauseTimer = () => {
 };
 
 const stopTimer = () => {
-  if (timerState.value === "Pause") {
-    if (timer.value) {
-      clearInterval(timer.value);
-    }
-    previusElapsedTime.value.push(clock.value);
-    timerState.value = "Start";
-    miliseconds.value = 0;
-    seconds.value = 0;
-    minutes.value = 0;
+  // stops adding empty entry to previous elapsed time list
+  if (minutes.value === 0 && seconds.value === 0 && miliseconds.value === 0) {
+    return;
   }
+  if (timer.value) {
+    clearInterval(timer.value);
+  }
+  previusElapsedTime.value.push(clock.value);
+  timerState.value = "Start";
+  miliseconds.value = 0;
+  seconds.value = 0;
+  minutes.value = 0;
 };
 
 const resetTimer = () => {

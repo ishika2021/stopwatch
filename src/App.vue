@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrapper">
-    <h1>Stopwatch</h1>
+    <span>Stopwatch</span>
     <Stopwatch/>
   </div>
 </template>
